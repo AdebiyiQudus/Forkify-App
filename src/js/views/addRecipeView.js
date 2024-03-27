@@ -42,4 +42,4 @@ class AddRecipeView extends View {
   _generateMarkup() {}
 }
 
-export default new AddRecipeView();g
+export default new AddRecipeView();
