@@ -21,11 +21,6 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import { async } from 'regenerator-runtime';
 
-// To activate the hot module reloading with parcel => it allows developers to update modules in an app without requiring a full page reload
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
 const controlRecipes = async function () {
   try {
     // point to the current url and remove the first character in the id and leave the rest starting from index 1
@@ -79,7 +74,6 @@ const controlSearchResults = async function () {
 // Creating a new controller => This is the controller that will be executed whenever we click on one of the buttons happens
 const controlPagination = function (goToPage) {
   // 3) Render NEW results
-  // resultsView.render(model.state.search.results)
   resultsView.render(model.getSearchResultsPage(goToPage));
 
   // 4) Render NEW pagination buttons at the same time when displaying the search result
@@ -92,7 +86,6 @@ const controlServings = function (newServings) {
   model.updateServings(newServings);
 
   // Update the recipe view
-  // recipeView.render(model.state.recipe);
   recipeView.update(model.state.recipe);
 };
 
