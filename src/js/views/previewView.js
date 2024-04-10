@@ -1,4 +1,4 @@
-// PreviewView is to only generate one preview element
+ // PreviewView is to only generate one preview element
 
 import View from './View.js';
 import icons from 'url:../../img/icons.svg';
