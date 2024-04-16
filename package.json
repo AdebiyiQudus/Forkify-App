@@ -10,16 +10,14 @@
   "author": "Adebiyi Qudus",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.2.1",
     "stream-browserify": "^3.0.0"
   },
   "dependencies": {
     "core-js": "^3.36.0",
-    "fractional": "^1.0.0",
+    "fracty": "^1.0.9",
     "regenerator-runtime": "^0.14.1",
-    "sass": "^1.26.10",
     "util": "^0.12.5"
   }
 }

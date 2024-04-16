@@ -8,7 +8,7 @@ import View from './View.js';
 // parce 1 import icons from '../img/icons.svg'
 // Parcel 2 => to acccess any static assets that are not programming files (images, videos or sound files) from another modules or files use parcel 2
 import icons from 'url:../../img/icons.svg';
-import { Fraction } from 'fractional';
+import fracty from 'fracty';
 
 // We want the RecipeView class to inherit the View class(all properties and methods)
 class RecipeView extends View {
@@ -145,7 +145,7 @@ class RecipeView extends View {
       </svg>
       <div class="recipe__quantity">${
         // if the ing quantity exist convert to a fractional string else set to an empty string
-        ing.quantity ? new Fraction(ing.quantity).toString() : ''
+        ing.quantity ? fracty(ing.quantity).toString() : ''
       }</div>
       <div class="recipe__description">
         <span class="recipe__unit">${ing.unit}</span>
